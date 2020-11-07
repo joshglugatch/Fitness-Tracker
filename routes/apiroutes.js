@@ -27,6 +27,7 @@ module.exports = function(app) {
         })
     });
 
+    //get for stats page
     app.get("/api/workouts/range", (req,res) => {
         db.find({})
         .then(workout => {
