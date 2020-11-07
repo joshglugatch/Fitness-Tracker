@@ -18,6 +18,7 @@ module.exports = function(app) {
         })      
         });
 
+        //update by workout id
     app.put("/api/workouts/:id", function(req,res){
         var id = req.params.id
         db.findByIdAndUpdate(id, {$push: {exercises: req.body}})
@@ -25,5 +26,15 @@ module.exports = function(app) {
             res.send(data)
         })
     });
+
+    app.get("/api/workouts/range", (req,res) => {
+        db.find({})
+        .then(workout => {
+          res.json(workout);
+        })
+        .catch(err => {
+          res.json(err);
+        });
+      });
     
 };
