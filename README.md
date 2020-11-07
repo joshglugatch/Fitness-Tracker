@@ -126,10 +126,10 @@ module.exports = function(app) {
 <br>
 
 # Deployed Link:
-
+https://gettin-fit.herokuapp.com/
 
 # Repository Link:
-https://github.com/joshglugatch/employee-summary-engine
+https://github.com/joshglugatch/Fitness-Tracker
 
 <br>
 
